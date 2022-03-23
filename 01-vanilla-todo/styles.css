@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: "Comic Sans MS";
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tu-du-liste-wrapper {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px 0;
+    width: 400px;
+}
+
+.tu-du-eintrag {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tu-du-eintrag > label {
+    flex-grow: 1;
+    user-select: none;
+    padding: 4px;
+}
+
+.tu-du-eintrag > label:hover {
+    background: lightgoldenrodyellow;
+}
+
+.tu-du-eintrag > #tu-du-loeschen {
+    cursor: pointer;
+}
+
+.tu-du-neu {
+    margin: 0;
+}
+
+.tu-du-neu > form {
+    width: 100%;
+    padding: 4px;
+    margin: 5px 0px 0px;
+}
+
+.tu-du-neu > form > input:first-child {
+    width: 100%;
+    font: 14px "Comic Sans MS";
+    padding: 4px;
+}
+
+.tu-du-funktionen {
+    margin: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.tu-du-funktionen button {
+    padding: 8px;
+    background: cornflowerblue;
+    color: white;
+    text-shadow: 0px 1px 3px black;
+    border-radius: 5px;
+    flex-grow: 1;
+}

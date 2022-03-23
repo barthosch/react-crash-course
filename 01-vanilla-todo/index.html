@@ -1,0 +1,43 @@
+<html lang="de">
+    <meta charset="utf-8"/>
+
+    <head>
+        <title>Tu Du 🫵</title>
+        <link rel="stylesheet" href="./styles.css" type="text/css" />
+    </head>
+
+    <template id="tu-du-template">
+        <div class="tu-du-eintrag">
+            <label>
+                <input type="checkbox" id="tu-du-status" />
+                <span id="tu-du-bezeichnung"></span>
+            </label>
+            <div id="tu-du-loeschen">❌</div>
+        </div>
+    </template>
+
+    <body>
+        <div id="app">
+            <h1>Tu Du 🫵</h1>
+
+            <div class="tu-du-liste-wrapper">
+                <div id="tu-du-liste"></div>
+
+                <div class="tu-du-neu">
+                    <form id="tu-du-neu-form">
+                        <input id="neu-tu-du-text" type="text" placeholder="Neuer Eintrag" autofocus/>
+                    </form>
+                </div>
+
+                <div class="tu-du-funktionen">
+                    <button id="btn-nichtsErledigt">Nichts erledigt</button>
+                    <button id="btn-allesErledigt">Alles erledigt</button>
+                    <button id="btn-alleLoeschen">Alle löschen</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="./tudus.js" type="text/javascript"></script>
+
+</html>
